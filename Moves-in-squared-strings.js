@@ -55,3 +55,5 @@ function selfieAndRot(s) {
 function oper(fn, s) {
   return fn(s);
 }
+
+// or
