@@ -57,3 +57,24 @@ function oper(fn, s) {
 }
 
 // or
+
+function revStr(strng) {
+  return [...strng].reverse().join('');
+} 
+function vertMirror(strng) {
+  return strng.split("\n").map(function(x) { return revStr(x); }).join("\n");
+}
+function horMirror(strng) {
+  return strng.split("\n").reverse().join("\n");
+}
+function rot(strng) {
+  return vertMirror(horMirror(strng));
+}
+function selfieAndRot(strng) {
+  let newstr1 = strng.split("\n").map(function(x) { return x + Array(x.length + 1).join("."); }).join("\n");
+  let newstr2 = rot(strng).split("\n").map(function(x) { return Array(x.length + 1).join(".") + x; }).join("\n");
+  return newstr1 + "\n" + newstr2;
+}
+function oper(fct, s) {
+  return fct(s);
+}
