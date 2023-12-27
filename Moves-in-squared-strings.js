@@ -40,3 +40,6 @@ Examples:
   oper(rot, s) => "ponm\nlkji\nhgfe\ndcba"
   oper(selfie_and_rot, s) => "abcd....\nefgh....\nijkl....\nmnop....\n....ponm\n....lkji\n....hgfe\n....dcba"
 */
+
+
+// or
